@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94 scan initiated Mon Aug 19 15:07:22 2024 as: nmap -sS -Pn -p 21,22,23,25,53,80,443,110,161,389,445,587,636,995,995,1025,1781,1723,2008,2482,2464,3081,5900,8080,1043 -&#45;script ssl-cert -oX 34.255.255.255.xml 34.255.255.255 -->
+<nmaprun scanner="nmap" args="nmap -sS -Pn -p 21,22,23,25,53,80,443,110,161,389,445,587,636,995,995,1025,1781,1723,2008,2482,2464,3081,5900,8080,1043 -&#45;script ssl-cert -oX 34.255.255.255.xml 34.255.255.255" start="1724094442" startstr="Mon Aug 19 15:07:22 2024" version="7.94" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="24" services="21-23,25,53,80,110,161,389,443,445,587,636,995,1025,1043,1723,1781,2008,2464,2482,3081,5900,8080"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1724094443" endtime="1724094446"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="34.255.255.255" addrtype="ipv4"/>
+<hostnames>
+<hostname name="ec2-34-255-255-255.eu-west-1.compute.amazonaws.com" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="closed" reason="reset" reason_ttl="128"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="closed" reason="reset" reason_ttl="128"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="23"><state state="closed" reason="reset" reason_ttl="128"/><service name="telnet" method="table" conf="3"/></port>
+<port protocol="tcp" portid="25"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="smtp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="53"><state state="closed" reason="reset" reason_ttl="128"/><service name="domain" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="closed" reason="reset" reason_ttl="128"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="110"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="pop3" method="table" conf="3"/></port>
+<port protocol="tcp" portid="161"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="snmp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="389"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="ldap" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="https" method="table" conf="3"/><script id="ssl-cert" output="Subject: commonName=*.everincloud.com&#xa;Subject Alternative Name: DNS:*.everincloud.com, DNS:everincloud.com&#xa;Issuer: commonName=Amazon RSA 2048 M02/organizationName=Amazon/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-05-21T00:00:00&#xa;Not valid after:  2025-06-19T23:59:59&#xa;MD5:   da77:b701:9d79:679f:1d62:5db9:6037:bd39&#xa;SHA-1: e3da:f875:0387:152e:bb3c:d2d0:6eb5:7669:8d49:1fd3"><table key="subject">
+<elem key="commonName">*.everincloud.com</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">Amazon RSA 2048 M02</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">Amazon</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">B4EA74DA29B55014DF639D1A2D4E613ED216C813C1829D9A29FB53E1698233519284CB148A667918DC51147C15BBEF8D7770FCE4BFAEB17C79C04BAE23EC052BCD7F17A0D28B128CF6545C2C0BCCE585CCAC8ECA6834AC7C359BA2EA76B314F8F6EFF3517501E7F58070D810FB3336AB22597751E0943D6D29CCFFECA91B25FAC6A91EFB60A5D55206155A0DC1E61A10E59296216829BF675A2873C3114A3758094E7835166EC81B0FD273032D43BA7E16CBF208B5B804CF9DC3D1606FCA6FADF4251BEAF68A23230393D8045DFE9A305C5B6E701024799AA7171C97F5EAD94BB3A21F2B1BE47A04AE72C6CD8FAF223C97729503D9B15A63E59263534F862CF9</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">C0:31:52:CD:5A:50:C3:82:7C:74:71:CE:CB:E9:9C:F9:7A:EB:82:E2</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">70:12:63:DE:81:BA:F4:04:4B:D7:EE:8A:35:7A:CC:6B:2F:C0:F3:D9</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:*.everincloud.com, DNS:everincloud.com</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://crl.r2m02.amazontrust.com/r2m02.crl</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://ocsp.r2m02.amazontrust.com&#xa;CA Issuers - URI:http://crt.r2m02.amazontrust.com/r2m02.cer</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 4E:75:A3:27:5C:9A:10:C3:38:5B:6C:D4:DF:3F:52:EB:&#xa;                1D:F0:E0:8E:1B:8D:69:C0:B1:FA:64:B1:62:9A:39:DF&#xa;    Timestamp : May 21 13:59:29.612 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:DF:72:B6:53:4A:33:FF:03:43:8F:FC:&#xa;                41:9E:06:B8:22:43:25:20:49:60:C1:73:49:2F:DA:1C:&#xa;                F9:AF:E2:C4:A0:02:20:47:5F:19:1C:05:7E:3E:92:B1:&#xa;                C9:A8:17:73:19:EF:78:DA:A3:E3:8C:A6:3F:FE:38:8F:&#xa;                6C:79:AB:C0:50:C6:27&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 7D:59:1E:12:E1:78:2A:7B:1C:61:67:7C:5E:FD:F8:D0:&#xa;                87:5C:14:A0:4E:95:9E:B9:03:2F:D9:0E:8C:2E:79:B8&#xa;    Timestamp : May 21 13:59:29.675 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:66:5B:C3:B0:2F:08:F2:C7:49:F8:FC:C0:&#xa;                0C:0E:62:25:82:61:E6:A6:E1:EC:FA:A2:5D:71:72:D2:&#xa;                99:78:3E:C6:02:21:00:FA:1F:08:F7:99:CA:8D:BD:EF:&#xa;                49:C9:FB:FE:F5:27:B4:E1:DE:B3:6D:6D:97:E9:A0:94:&#xa;                9F:30:2C:8C:F5:99:B0&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : E6:D2:31:63:40:77:8C:C1:10:41:06:D7:71:B9:CE:C1:&#xa;                D2:40:F6:96:84:86:FB:BA:87:32:1D:FD:1E:37:8E:50&#xa;    Timestamp : May 21 13:59:29.695 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:EF:8E:18:DC:49:E1:75:D9:42:31:9D:&#xa;                DF:AF:6B:AD:A2:C1:12:D9:43:13:FB:69:75:D8:57:CC:&#xa;                3C:AD:54:47:34:02:21:00:FE:12:DE:CE:21:10:57:82:&#xa;                F5:22:EC:D2:FB:6D:1C:9A:AA:EB:F4:98:33:29:32:4A:&#xa;                22:95:03:EC:FC:B2:0F:92</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-05-21T00:00:00</elem>
+<elem key="notAfter">2025-06-19T23:59:59</elem>
+</table>
+<elem key="md5">da77b7019d79679f1d625db96037bd39</elem>
+<elem key="sha1">e3daf8750387152ebb3cd2d06eb576698d491fd3</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIF4DCCBMigAwIBAgIQDm0rJwJIa/JmRELhO/LzlDANBgkqhkiG9w0BAQsFADA8&#xa;MQswCQYDVQQGEwJVUzEPMA0GA1UEChMGQW1hem9uMRwwGgYDVQQDExNBbWF6b24g&#xa;UlNBIDIwNDggTTAyMB4XDTI0MDUyMTAwMDAwMFoXDTI1MDYxOTIzNTk1OVowHDEa&#xa;MBgGA1UEAwwRKi5ldmVyaW5jbG91ZC5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IB&#xa;DwAwggEKAoIBAQC06nTaKbVQFN9jnRotTmE+0hbIE8GCnZop+1PhaYIzUZKEyxSK&#xa;ZnkY3FEUfBW77413cPzkv66xfHnAS64j7AUrzX8XoNKLEoz2VFwsC8zlhcysjspo&#xa;NKx8NZui6nazFPj27/NRdQHn9YBw2BD7MzarIll3UeCUPW0pzP/sqRsl+sapHvtg&#xa;pdVSBhVaDcHmGhDlkpYhaCm/Z1ooc8MRSjdYCU54NRZuyBsP0nMDLUO6fhbL8gi1&#xa;uATPncPRYG/Kb630JRvq9oojIwOT2ARd/powXFtucBAkeZqnFxyX9erZS7OiHysb&#xa;5HoErnLGzY+vIjyXcpUD2bFaY+WSY1NPhiz5AgMBAAGjggL8MIIC+DAfBgNVHSME&#xa;GDAWgBTAMVLNWlDDgnx0cc7L6Zz5euuC4jAdBgNVHQ4EFgQUcBJj3oG69ARL1+6K&#xa;NXrMay/A89kwLQYDVR0RBCYwJIIRKi5ldmVyaW5jbG91ZC5jb22CD2V2ZXJpbmNs&#xa;b3VkLmNvbTATBgNVHSAEDDAKMAgGBmeBDAECATAOBgNVHQ8BAf8EBAMCBaAwHQYD&#xa;VR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMDsGA1UdHwQ0MDIwMKAuoCyGKmh0&#xa;dHA6Ly9jcmwucjJtMDIuYW1hem9udHJ1c3QuY29tL3IybTAyLmNybDB1BggrBgEF&#xa;BQcBAQRpMGcwLQYIKwYBBQUHMAGGIWh0dHA6Ly9vY3NwLnIybTAyLmFtYXpvbnRy&#xa;dXN0LmNvbTA2BggrBgEFBQcwAoYqaHR0cDovL2NydC5yMm0wMi5hbWF6b250cnVz&#xa;dC5jb20vcjJtMDIuY2VyMAwGA1UdEwEB/wQCMAAwggF/BgorBgEEAdZ5AgQCBIIB&#xa;bwSCAWsBaQB2AE51oydcmhDDOFts1N8/Uusd8OCOG41pwLH6ZLFimjnfAAABj5tz&#xa;NEwAAAQDAEcwRQIhAN9ytlNKM/8DQ4/8QZ4GuCJDJSBJYMFzSS/aHPmv4sSgAiBH&#xa;XxkcBX4+krHJqBdzGe942qPjjKY//jiPbHmrwFDGJwB2AH1ZHhLheCp7HGFnfF79&#xa;+NCHXBSgTpWeuQMv2Q6MLnm4AAABj5tzNIsAAAQDAEcwRQIgZlvDsC8I8sdJ+PzA&#xa;DA5iJYJh5qbh7PqiXXFy0pl4PsYCIQD6Hwj3mcqNve9Jyfv+9Se04d6zbW2X6aCU&#xa;nzAsjPWZsAB3AObSMWNAd4zBEEEG13G5zsHSQPaWhIb7uocyHf0eN45QAAABj5tz&#xa;NJ8AAAQDAEgwRgIhAO+OGNxJ4XXZQjGd369rraLBEtlDE/tpddhXzDytVEc0AiEA&#xa;/hLeziEQV4L1IuzS+20cmqrr9JgzKTJKIpUD7PyyD5IwDQYJKoZIhvcNAQELBQAD&#xa;ggEBADvTdDccEQbJ/MKP4d8J83dbuLhe0T71RZUKhk+VSPEmp1f0HrE+PYqcww05&#xa;PSf5SmXyDRSYj/nykteqAkfYn06hQ/Bm43zrQhPpJ+yuX9P1w0ATXMh+sa/ZCJqC&#xa;FapmrmRatzMlGdFMAY1Fp2l0zSIzsgA0IP7dmXL6nW7fVT4yiHLxIr9H9wI9ottU&#xa;1BDmbV8xEDkohGX6KMR1wNDxrIac6k4yewYxJzGfOBZjxFBE1YlAAW7emEATlC3e&#xa;wQmuuUtrp0HSVC2DVvgDrAbmL8lSrae1yaD3ElwIIQ168RiqWr9B+6FqnK1GbrVP&#xa;GBuiobPkJOlnkEjNh45jLtvL8Xg=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="445"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="587"><state state="closed" reason="reset" reason_ttl="128"/><service name="submission" method="table" conf="3"/></port>
+<port protocol="tcp" portid="636"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="ldapssl" method="table" conf="3"/></port>
+<port protocol="tcp" portid="995"><state state="closed" reason="reset" reason_ttl="128"/><service name="pop3s" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1025"><state state="closed" reason="reset" reason_ttl="128"/><service name="NFS-or-IIS" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1043"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="boinc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1723"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="pptp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1781"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="answersoft-lm" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2008"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="conf" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2464"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="direcpc-si" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2482"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="giop-ssl" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3081"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="tl1-lv" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5900"><state state="closed" reason="reset" reason_ttl="128"/><service name="vnc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="closed" reason="reset" reason_ttl="128"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="121002" rttvar="93301" to="494206"/>
+</host>
+<runstats><finished time="1724094446" timestr="Mon Aug 19 15:07:26 2024" summary="Nmap done at Mon Aug 19 15:07:26 2024; 1 IP address (1 host up) scanned in 3.87 seconds" elapsed="3.87" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
